@@ -14,7 +14,7 @@ export default function Todo({ name, prioriry, completed, id }) {
    const dispatch = useDispatch();
    const toggleCheckbox = () => {
       setChecked(!checked);
-      dispatch(todoListSlice.actions.toggleTodoStatus(id));
+      dispatch(todoListSlice.action.toggleTodoStatus(id));
    };
 
    return (

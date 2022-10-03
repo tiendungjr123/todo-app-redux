@@ -12,17 +12,17 @@ export default function Filters() {
    const dispatch = useDispatch();
    const handleSearchTextChange = (e) => {
       setSearchText(e.target.value);
-      dispatch(filtersSlice.actions.searchFilterChange(e.target.value))
+      dispatch(filtersSlice.action.searchFilterChange(e.target.value))
    }
 
    const handleFilterChange = (e) => {
       setFilterStatus(e.target.value);
-      dispatch(filtersSlice.actions.statusFilterChange(e.target.value));
+      dispatch(filtersSlice.action.statusFilterChange(e.target.value));
    }
 
    const handlePriorityChange = (value) => {
       setFilterPriorities(value);
-      dispatch(filtersSlice.actions.priorityFilterChange(value))
+      dispatch(filtersSlice.action.priorityFilterChange(value))
    }
    return (
       <Row justify='center'>

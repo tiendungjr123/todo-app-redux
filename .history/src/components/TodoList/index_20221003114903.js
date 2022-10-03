@@ -15,7 +15,7 @@ export default function TodoList() {
 
    const handleAddButtonClick = () => {
       dispatch(
-         todoListSlice.actions.addTodo({
+         todoListSlice.action.addTodo({
             id: uuidv4(),
             name: todoName,
             priority: priority,
