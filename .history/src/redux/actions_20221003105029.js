@@ -8,7 +8,7 @@ export const addTodo = (data) => {
 export const toggleTodoStatus = (todoId) =>{
    return {
       type:'todoList/toggleTodoStatus',
-      payload: todoId
+      id: todoId
    }
 }
 
